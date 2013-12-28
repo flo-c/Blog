@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="slidingapp.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+  </head>
+  <body onload="main.initialize()">
+	<div id="output">
+		<header id="headercontainer">
+			<div class="left-header">
+				<span class="slidingapp-logo">&nbsp;</span>
+				<div class="app-title"><h1>Sliding App</h1></div>
+			</div>
+			<span class="glyphicon glyphicon-wrench btn-lg tool-icon"></span>
+		</header>
+		<div id="swipingcontainer" class="maincontainer">
+			<div id="menu" class="leftcontainer">
+				<div id="menucontent" class="leftcontent">
+					<ul class="menu-sidenav">
+						<li><h3>Item 1</h3></li>
+						<li><h3>Item 2</h3></li>
+						<li><h3>Item 3</h3></li>
+						<li><h3>Item 4</h3></li>
+						<li><h3>Item 5</h3></li>
+						<li><h3>Item 6</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="main" class="rightcontainer">
+				<div id="maincontent" class="rightcontent">
+					<p>This is the Sliding App</p>
+					<div id="content">
+						<p>Swipe to right or left to display or hide the menu</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
