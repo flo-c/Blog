@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="rickshawapp">
+  <head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/angular.js"></script>
+	<script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angularrickshaw/angularrickshaw.js"></script>
+	<script type="text/javascript" src="rickshawapp.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+	<div id="output">
+		<div id="main" class="maincontainer" ng-controller="MainCtrl">
+			<h1>Angular Rickshaw Application</h1>
+            <p>{{title}}</p>
+	        <div id="content">
+		        <p>{{text}}</p>
+	        </div>
+			<div class="graphic-content">
+				<rickshawgraph color="graphcolor" graphicaldata="graphdata" height="graphheight" width="graphwidth"></rickshawgraph>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<label class="sr-only">Color Name</label>
+						<input type="text" class="form-control" placeholder="Type a color name" ng-model="inputColor">
+					</div>
+					<button type="button" class="btn btn-default" ng-click="changeColor()">Change the color</button>
+				</form>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<label class="sr-only">Height</label>
+						<input type="text" class="form-control" placeholder="Type a height" ng-model="inputHeight">
+					</div>
+					<button type="button" class="btn btn-default" ng-click="changeHeight()">Change the height</button>
+				</form>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<label class="sr-only">Width</label>
+						<input type="text" class="form-control" placeholder="Type a width" ng-model="inputWidth">
+					</div>
+					<button type="button" class="btn btn-default" ng-click="changeWidth()">Change the width</button>
+				</form>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<label class="sr-only">New Point</label>
+						<input type="text" class="form-control" placeholder="Type a point value" ng-model="inputData">
+					</div>
+					<button type="button" class="btn btn-default" ng-click="addData()">Add a data point</button>
+				</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
