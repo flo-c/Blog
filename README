@@ -1,6 +1,7 @@
 The Blog repository gathers the code examples described in my Blog Dev Side Stories http://devsidestories.blogspot.fr/ .
 
 This repository contains:
-*	slidingpanelmenu folder for the article http://devsidestories.blogspot.fr/2013/12/sliding-panel-menu.html
+*	slidingpanelmenu folder
+	http://devsidestories.blogspot.fr/2013/12/sliding-panel-menu.html
 
 In each folder, you can install dependencies with "npm install" command. Then you are able to run the example of the folder with "grunt int-build" command and then target the url http://localhost:8888 .
