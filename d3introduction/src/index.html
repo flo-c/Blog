@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/d3.js"></script>
+    <script type="text/javascript" src="d3introduction.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+	<div id="output">
+		<div id="main" class="maincontainer">
+			<h1>D3js Application</h1>
+            <p>Test D3.js library in an application</p>
+	        <div id="content">
+		        <p>The aim of this code example is to show how to implement an application using the d3.js framework.</p>
+	        </div>
+			<div id="graph" class="graphic-content"></div>
+			<div class="circlegroup">
+				<h3>Add a Circle (x and y with radius should not overlap the axis)</h3>
+				<form class="form-horizontal" role="form">
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="xinput">X</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="xinput" placeholder="Enter X">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="yinput">Y</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="yinput" placeholder="Enter Y">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="radiusinput">Radius</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="radiusinput" placeholder="Enter Radius">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="colorinput">Color</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="colorinput" placeholder="Enter Color">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-default" onclick="main.addCircle()" >Add a circle</button>
+					</div>
+				  </div>
+				</form>
+			</div>
+			<div class="circlegroup">
+				<h3>Remove a Circle</h3>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="button" class="btn btn-default" onclick="main.removeFirstCircle()">Remove the first circle</button>
+						</div>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">main.initialize();</script>
+  </body>
+</html>

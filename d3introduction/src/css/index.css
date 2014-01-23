@@ -1,0 +1,36 @@
+html {
+	height : 100%;
+	width : 100%;
+}
+
+body h1 {
+	margin : 0;
+	padding : 20px 0 20px;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	height : 100%;
+}
+
+#output {
+	height : 100%;
+	width : 100%;
+	padding-left : 20px;
+}
+
+.maincontainer {
+	width : 75%;
+	padding : 0;
+	margin : 0;
+}
+
+.graphic-content {
+	margin : 0;
+	padding : 20px 0 20px;
+}
+
+.circlegroup {
+	border : 2px solid black;
+}
