@@ -1,10 +1,10 @@
 The Blog repository gathers the code examples described in my Blog Dev Side Stories http://devsidestories.blogspot.fr/ .
 
 This repository contains:
-*	slidingpanelmenu folder
-	http://devsidestories.blogspot.fr/2013/12/sliding-panel-menu.html
-*	angularrickshaw folder
-	http://devsidestories.blogspot.fr/2014/01/rickshaw-toolkit-in-angularjs.html
+*   slidingpanelmenu folder
+    http://devsidestories.blogspot.fr/2013/12/sliding-panel-menu.html
+*   angularrickshaw folder
+    http://devsidestories.blogspot.fr/2014/01/rickshaw-toolkit-in-angularjs.html
 *   d3introduction folder
     http://devsidestories.blogspot.fr/2014/01/introduction-to-d3js.html
 	
