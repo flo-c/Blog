@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/jspdf.js"></script>
+    <script type="text/javascript" src="pdfapp.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+	<div id="output">
+		<div id="main" class="maincontainer">
+			<h1>Jspdf library</h1>
+            <p>Test the jspdf library for generating some pdf files (even for mobile app)</p>
+	        <div>
+		        <p>The aim of this code example is to show how to generate and preview a simple pdf file thanks to the jspdf library</p>
+	        </div>
+			<div class="contentcontainer">
+				<h3>Add the title and the content of your pdf</h3>
+				<form class="form-horizontal" role="form">
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="titleinput">Title</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="titleinput" placeholder="Enter a title">
+					</div>
+				  </div>
+				  <div class="form-group">
+					<label class="col-sm-2 control-label" for="textinput">Text</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="textinput" placeholder="Enter a text" rows="5"></textarea>
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-default" onclick="main.previewPdf()">Preview the pdf</button>
+					</div>
+				  </div>
+				</form>
+			</div>
+            <iframe id="preview" class="contentcontainer"></iframe>
+		</div>
+	</div>
+  </body>
+</html>
