@@ -9,5 +9,7 @@ This repository contains:
     http://devsidestories.blogspot.fr/2014/01/introduction-to-d3js.html
 *   pdfapp folder
     http://devsidestories.blogspot.fr/2014/03/generating-pdf-from-client-side-with.html
+*   firebaseangularapp folder (do not forget to change the 'FIREBASE_URL' constant in the firebasemodule.js file)
+    http://devsidestories.blogspot.fr/2014/04/implementing-login-with-firebase-and.html
 	
 In each folder, you can install dependencies with "npm install" command. Then you are able to run the example of the folder with "grunt int-build" command and then target the url http://localhost:8888 .
