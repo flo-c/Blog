@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="firebaseangularapp">
+  <head>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/peg.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="pegjsapp.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+	<div id="output">
+		<header id="headercontainer">
+			<div class="left">
+				<div class="app-title"><h1>Pegjs Application</h1></div>
+			</div>
+		</header>
+        <div id="main">
+            <div id="maincontent" class="content">
+                <div id="definitionContainer" class="container left">
+                    <p>You can type your text here:</p>
+                    <textarea id="definitionField" class="form-control" rows="15" style="width:100%;height:95%;resize:none;" onkeyup="window.pegjsmain.parseDefinition(event)"></textarea>
+                </div>
+                <div id="resultContainer" class="container right">
+                    <p>The result of your text parsing is:</p>
+                    <div style="width:100%;height:95%;background-color:#DDDDDD;">
+                        <div id="errorDisplay" class="alert alert-danger hidden" role="alert">&nbsp;</div>
+                        <div id="resultDisplay" style="width:100%;height:95%;">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">pegjsmain.initialize()</script>
+	</div>
+  </body>
+</html>
